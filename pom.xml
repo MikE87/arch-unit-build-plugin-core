@@ -70,11 +70,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <java.version>11</java.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <java.version>8</java.version>
 
-        <tng.archunit.version>1.0.0</tng.archunit.version>
+        <tng.archunit.version>1.0.1</tng.archunit.version>
 
         <version.roaster>2.26.0.Final</version.roaster>
 
