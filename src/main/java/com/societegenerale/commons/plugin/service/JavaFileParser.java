@@ -6,6 +6,7 @@ import java.nio.file.Path;
 
 import com.societegenerale.commons.plugin.Log;
 import org.jboss.forge.roaster.Roaster;
+import org.jboss.forge.roaster.model.JavaUnit;
 import org.jboss.forge.roaster.model.source.JavaSource;
 
 class JavaFileParser
@@ -22,7 +23,7 @@ class JavaFileParser
     JavaFile parse(final Path javafilePath, final Log logger) throws IOException
     {
 
-        var parsedJavaFile=Roaster.parseUnit(Files.newInputStream(javafilePath));
+        JavaUnit parsedJavaFile = Roaster.parseUnit(Files.newInputStream(javafilePath));
         JavaSource myClass = parsedJavaFile.getGoverningType();
 
 
